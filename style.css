@@ -38,3 +38,50 @@ img {
     flex: 1; /* Take up remaining space between images */
     padding: 0 20px; /* Add padding to the content area */
 }
+
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            flex-basis: calc(50% - 20px);
+            padding: 0 10px;
+        }
+
+        .col-left {
+            flex: 0 0 auto;
+            max-width: calc(50% - 20px);
+            margin-right: 10px;
+        }
+
+        .col-right {
+            flex: 0 0 auto;
+            max-width: calc(50% - 20px);
+            margin-left: 10px;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 767px) {
+            .col-left,
+            .col-right {
+                flex-basis: 100%;
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+

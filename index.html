@@ -1,76 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-        crossorigin="anonymous"
-    />
+        crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
         <!-- place navbar here -->
     </header>
-    <style>
-        main {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    
-        img {
-            max-height: 100%; /* Ensure images don't exceed the height of the parent container */
-        }
-    
-        .content {
-            flex: 1; /* Take up remaining space between images */
-            padding: 0 20px; /* Add padding to the content area */
-        }
-    </style>
-    
-    <main>
-        <img src="https://picsum.photos/200/911" alt="Left Image">
-        <div class="content">
-            <h3> Dive into the history of September 25th on this interactive website. Click buttons representing different years to discover significant events that occurred on this date. From historical milestones to cultural moments, explore the diverse stories that define September 25th. </h3>
-           
-            <button id="1789" onclick="window.location.href='1789.html';">1789</button>   
-            <button id="1957" onclick="window.location.href='1957.html';">1957</button>
-            <button id="1981" onclick="window.location.href='1981.html';">1981</button>
-            <button id="1992" onclick="window.location.href='1992.html';">1992</button>
-            <button id="2005" onclick="window.location.href='2005.html';">2005</button>
+   
 
+    <main>
+        <div class="col-left">
+            <img src="https://picsum.photos/300/911" alt="Left Image">
         </div>
-        <img src="https://picsum.photos/200/911" alt="Right Image">
+        <div class="content col-sm-12 col-md-6">
+                <h3> Dive into the history of September 25th on this interactive website. Click buttons representing
+                    different years to discover significant events that occurred on this date. From historical milestones to
+                    cultural moments, explore the diverse stories that define September 25th. <br> <br> </h3>
+    
+                <button onclick="change1789()">1789</button>
+                <button onclick="change1957()">1957</button>
+                <button onclick="change1981()">1981</button>
+                <button onclick="change1992()">1992</button>
+                <button onclick="change2005()" >2005</button>
+        </div>
+        <div id="info"></div>
+        <div class="col-right">
+            <img src="https://picsum.photos/300/911" alt="Right Image">
+        </div>
     </main>
+    
     <footer>
         <!-- Add your footer content here -->
     </footer>
-    
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"
-    ></script>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"
-    ></script>
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>
