@@ -1,87 +1,55 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: black;
+    color: white;
     margin: 0;
-    overflow: hidden; /* Prevent horizontal scrollbar */
+    font-family: 'Arial', sans-serif;
+}
+
+main, .content, .col-left, .col-right, footer {
+    background-color: black;
+    color: white;
 }
 
 main {
-    text-align: center;
     display: flex;
-    align-items: center;
-}
-
-img {
-    height: 100vh;
-    width: auto;
-}
-
-.content {
-    margin: 0 20px; /* Adjust the margin as needed */
-    flex: 1;
-}
-
-
-main {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 img {
-    max-height: 100%; /* Ensure images don't exceed the height of the parent container */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .content {
-    flex: 1; /* Take up remaining space between images */
-    padding: 0 20px; /* Add padding to the content area */
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
+.col-left, .col-right {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 0;
+}
 
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
+button {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
+}
 
-        .content {
-            flex-basis: calc(50% - 20px);
-            padding: 0 10px;
-        }
-
-        .col-left {
-            flex: 0 0 auto;
-            max-width: calc(50% - 20px);
-            margin-right: 10px;
-        }
-
-        .col-right {
-            flex: 0 0 auto;
-            max-width: calc(50% - 20px);
-            margin-left: 10px;
-        }
-
-        footer {
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-        }
-
-        @media (max-width: 767px) {
-            .col-left,
-            .col-right {
-                flex-basis: 100%;
-                max-width: 100%;
-                margin: 0;
-            }
-        }
-
+button:hover {
+    background-color: #ddd; /* Change the hover background color as desired */
+}
