@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>September 25!</title>
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -12,24 +13,26 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous" />
 
-   
 </head>
-<center><br><br>
-<body>
-    <header>
+
+<body class="d-flex flex-column min-vh-100 justify-content-between align-items-center">
+    
+    <header class="mb-4">
         <!-- place navbar here -->
+        <h3 id="historyText"> Dive into the history of September 25th on this interactive website. Click buttons representing
+            different years to discover significant events that occurred on this date. From historical milestones to
+            cultural moments, explore the diverse stories that define September 25th. Just hit the buttons and begin
+            learning! </h3>
     </header>
 
-    <main class="container main-container">
+    <main class="container text-center my-4">
         <div class="row">
             <div class="col-md-6 mx-auto">
-                <img id="placeholderImage" src="imgs/billofrights.jpg" alt="Placeholder Image" class="img-fluid">
+                <img id="placeholderImage" src="imgs/me.png" alt="Placeholder Image" class="img-fluid">
             </div>
         </div>
-        <div class="content">
-            <h3> Dive into the history of September 25th on this interactive website. Click buttons representing
-                different years to discover significant events that occurred on this date. From historical milestones to
-                cultural moments, explore the diverse stories that define September 25th. Just hit the buttons and begin learning! </h3>
+        <div class="content mt-4">
+
 
             <button onclick="change1789()">1789</button>
             <button onclick="change1957()">1957</button>
@@ -40,7 +43,7 @@
         <div id="info"></div>
     </main>
 
-    <footer>
+    <footer class="mt-4">
         <!-- Add your footer content here -->
     </footer>
 
@@ -53,6 +56,8 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+ 
 </body>
-</center>
+
 </html>
