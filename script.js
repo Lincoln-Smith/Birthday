@@ -1,7 +1,7 @@
 
 // Change for the year 1789
 function change1789() {
-   document.getElementById("info").innerText = "1789- U.S. Congress passes the Bill of Rights, the first 10 amendments to the U.S. Constitution. The rights the amendments establish include freedom of speech and the press, the right to bear arms and numerous legal rights of those accused of crimes, including the right to a trial by an impartial jury, protection from cruel and unusual punishments and protection against self-incrimination."
+   document.getElementById("info").innerText = "1789- The U.S. Congress passed the Bill of Rights, comprising the first 10 amendments to the Constitution, enshrining fundamental rights such as freedom of speech, the right to bear arms, and legal protections for accused individuals."
    document.getElementById("placeholderImage").src = "imgs/racism3.png";
 }
 
