@@ -1,21 +1,27 @@
-body {
-    background-color: black;
-    color: white;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-main, .content, .col-left, .col-right, footer {
-    background-color: black;
-    color: white;
+body,
+main,
+.content,
+.col-left,
+.col-right,
+footer {
+    background-color: black !important;
+    color: white !important;
+    font-family: 'AR One Sans', sans-serif;
 }
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+
+/* Style for rounded, light gray box */
+.container-box {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 img {
@@ -24,32 +30,51 @@ img {
     margin-bottom: 10px;
 }
 
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    main img {
+        max-width: 80%;
+    }
+}
+
 .content {
-    flex-basis: 100%;
+    width: 100%;
     text-align: center;
     margin-top: 20px;
 }
 
-.col-left, .col-right {
-    flex-basis: 100%;
-    max-width: 100%;
-    margin: 0;
+button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+button:hover {
+    background-color: #333;
+    transform: scale(1.05); /* Scale 5% larger on hover */
 }
 
 footer {
     width: 100%;
     text-align: center;
     padding: 10px;
+    font-family: 'Gamja Flower', sans-serif;
 }
 
-button {
-    background-color: black; /* Change button background color to black */
+footer {
+    background: linear-gradient(to bottom, black, #333333); /* Gradient from black to dark gray */
     color: white;
-    border: 1px solid white;
-    margin: 5px;
+    text-align: center;
     padding: 10px;
 }
 
-button:hover {
-    background-color: #333; /* Change hover background color as desired */
+header {
+    background: linear-gradient(to top, black, #333333); /* Gradient from black to dark gray */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
 }
