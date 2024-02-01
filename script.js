@@ -2,7 +2,7 @@
 // Change for the year 1789
 function change1789() {
    document.getElementById("info").innerText = "1789- The U.S. Congress passed the Bill of Rights, ensuring key freedoms in the first 10 amendments to the Constitution.   "
-   document.getElementById("placeholderImage").src = "imgs/america.png";
+   document.getElementById("placeholderImage").src = "imgs/scroll.png";
 }
 
 // Change for the year 1957
